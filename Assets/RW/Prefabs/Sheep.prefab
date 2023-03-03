@@ -79,6 +79,9 @@ MonoBehaviour:
   runSpeed: 10
   gotHayDestroyDelay: 1
   dropDestroyDelay: 4
+  heartOffset: 4
+  heartPrefab: {fileID: 560764518281231086, guid: 40829e772a7d9fc45ab695f6f2e05016,
+    type: 3}
 --- !u!1001 &7972895397082932772
 PrefabInstance:
   m_ObjectHideFlags: 0
