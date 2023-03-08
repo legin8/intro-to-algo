@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Sheep : MonoBehaviour
 {
-    public float runSpeed;
-    public float gotHayDestroyDelay;
-    private bool hitByHay;
-    private bool dropped;
+    public float runSpeed, gotHayDestroyDelay, dropDestroyDelay, heartOffset;
+    private bool hitByHay, dropped;
 
-    public float dropDestroyDelay;
+    
     private Collider myCollider;
     private Rigidbody myRigidbody;
-
     private SheepSpawner sheepSpawner;
-
-    public float heartOffset;
     public GameObject heartPrefab;
     // Start is called before the first frame update
     void Start()
@@ -36,16 +31,11 @@ public class Sheep : MonoBehaviour
         TweenScale tweenScale = gameObject.AddComponent<TweenScale>();
         tweenScale.targetScale = 0;
         tweenScale.timeToReachTarget = gotHayDestroyDelay;
-
         SoundManager.Instance.PlaySheepHitClip();
-
         sheepSpawner.RemoveSheepFromList(gameObject);
-
         hitByHay = true; 
         runSpeed = 0;
-
         Destroy(gameObject, gotHayDestroyDelay);
-
         GameStateManager.Instance.SavedSheep();
     }
 
@@ -63,9 +53,7 @@ public class Sheep : MonoBehaviour
     {
         GameStateManager.Instance.DroppedSheep();
         sheepSpawner.RemoveSheepFromList(gameObject);
-
         SoundManager.Instance.PlaySheepDroppedClip();
-
         dropped = true;
         myRigidbody.isKinematic = false;
         myCollider.isTrigger = false;

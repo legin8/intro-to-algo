@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class HayMachine : MonoBehaviour
 {
-    public float movementSpeed;
-    public float horizontalBoundary = 22;
-    public GameObject hayBalePrefab;
-    public Transform haySpawnpoint;
-    public float shootInterval;
+    public float movementSpeed, horizontalBoundary = 22, shootInterval;
     private float shootTimer;
+    public GameObject hayBalePrefab, blueModelPrefab, yellowModelPrefab, redModelPrefab;
+    public Transform haySpawnpoint, modelParent;
 
-    public Transform modelParent; 
-
-    public GameObject blueModelPrefab;
-    public GameObject yellowModelPrefab;
-    public GameObject redModelPrefab;
     // Start is called before the first frame update
     void Start()
     {
