@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &111892036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5233456973075758890, guid: 5c5170d876533ae43bc2e4b15c8e6f6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 575060339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +975,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fee0f50f91e9d7d4a84a85232e663d4a, type: 3}
+--- !u!1 &1027848420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5917108387044516939, guid: 28d1a170d9eea59478aa66152b57f446,
+    type: 3}
+  m_PrefabInstance: {fileID: 1892753052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1050572059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1524613847715755804, guid: ff9c52423c3a7be49af987edf422bcff,
@@ -1501,6 +1513,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1282725049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1593453603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3278733490917006391, guid: 5162234e78cffba45b0498c4775c0be7,
+    type: 3}
+  m_PrefabInstance: {fileID: 434092225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1628133923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1622,6 +1640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739839072}
   - component: {fileID: 1739839071}
+  - component: {fileID: 1739839073}
   m_Layer: 0
   m_Name: Hay Machines
   m_TagString: Untagged
@@ -1660,6 +1679,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1739839073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739839070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d75dc6cc51ed44468924dd833823860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blueHayMachine: {fileID: 111892036}
+  yellowHayMachine: {fileID: 1027848420}
+  redHayMachine: {fileID: 1593453603}
 --- !u!1001 &1851825592
 PrefabInstance:
   m_ObjectHideFlags: 0
