@@ -5,23 +5,14 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance; 
-
-    public AudioClip shootClip;
-    public AudioClip sheepHitClip;
-    public AudioClip sheepDroppedClip;
-
+    public AudioClip shootClip, sheepHitClip, sheepDroppedClip;
     private Vector3 cameraPosition;
+
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this;
         cameraPosition = Camera.main.transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void PlaySound(AudioClip clip)

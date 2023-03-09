@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 public class ChangeColorOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public MeshRenderer model;
-    public Color normalColor;
-    public Color hoverColor;
+    public Color normalColor, hoverColor;
+    
     // Start is called before the first frame update
     void Start()
     {

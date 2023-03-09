@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class TweenScale : MonoBehaviour
 {
-    public float targetScale;
-    public float timeToReachTarget;
-    private float startScale;
-    private float percentScaled;
+    public float targetScale, timeToReachTarget;
+    private float startScale, percentScaled;
     // Start is called before the first frame update
     void Start()
     {

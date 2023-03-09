@@ -6,38 +6,21 @@ using System;
 
 public class HayMachineSwitcher : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject blueHayMachine;
-    public GameObject yellowHayMachine;
-    public GameObject redHayMachine;
-
     private int selectedIndex;
+    public GameObject blueHayMachine, yellowHayMachine, redHayMachine;
 
     public void OnPointerClick(PointerEventData eventData)
     {
         selectedIndex++;
         selectedIndex %= Enum.GetValues(typeof(HayMachineColor)).Length;
-
         GameSettings.hayMachineColor = (HayMachineColor)selectedIndex;
 
-        switch (GameSettings.hayMachineColor)
-            {
-                case HayMachineColor.Blue:
-                    blueHayMachine.SetActive(true);
-                    yellowHayMachine.SetActive(false);
-                    redHayMachine.SetActive(false);
-                break;
-
-                case HayMachineColor.Yellow:
-                    blueHayMachine.SetActive(false);
-                    yellowHayMachine.SetActive(true);
-                    redHayMachine.SetActive(false);
-                break;
-
-                case HayMachineColor.Red:
-                    blueHayMachine.SetActive(false);
-                    yellowHayMachine.SetActive(false);
-                    redHayMachine.SetActive(true);
-                break;
-            }
+        blueHayMachine.SetActive(false);
+        yellowHayMachine.SetActive(false);
+        redHayMachine.SetActive(false);
+        
+        if (GameSettings.hayMachineColor == HayMachineColor.Blue) blueHayMachine.SetActive(true);
+        if (GameSettings.hayMachineColor == HayMachineColor.Yellow) yellowHayMachine.SetActive(true); 
+        if (GameSettings.hayMachineColor == HayMachineColor.Red) redHayMachine.SetActive(true);
     }
 }

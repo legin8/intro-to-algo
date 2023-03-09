@@ -8,10 +8,7 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance; 
 
     [HideInInspector]
-    public int sheepSaved;
-
-    [HideInInspector]
-    public int sheepDropped;
+    public int sheepSaved, sheepDropped;
 
     public int sheepDroppedBeforeGameOver;
     public SheepSpawner sheepSpawner;

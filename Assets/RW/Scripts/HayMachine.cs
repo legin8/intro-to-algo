@@ -17,7 +17,7 @@ public class HayMachine : MonoBehaviour
 
     private void LoadModel()
     {
-        Destroy(modelParent.GetChild(0).gameObject); 
+        Destroy(modelParent.GetChild(0).gameObject);
 
         switch (GameSettings.hayMachineColor) 
             {
@@ -51,7 +51,7 @@ public class HayMachine : MonoBehaviour
     }
 
     private void UpdateShooting()
-{
+    {
     shootTimer -= Time.deltaTime; 
 
     if (shootTimer <= 0 && Input.GetKey(KeyCode.Space)) 
