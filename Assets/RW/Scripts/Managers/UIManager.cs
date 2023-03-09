@@ -1,3 +1,13 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: UIManager.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: Holds Methods for saving and dropping sheep.
+Also the Method that show the game over screen.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,12 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: Move.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: Uses the mouse click to set the color of the haymachine.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,16 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: GameStateManager.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: Hides sheepSaved and sheepDropped from the editor.
+Sets Instance to this Instance on Awake.
+If the Esc button is pressed then it loads the title screen.
+Holds Methods for updating the sheep saved and sheep dropped on the screen.
+Holds Method that puts the game over screen up.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

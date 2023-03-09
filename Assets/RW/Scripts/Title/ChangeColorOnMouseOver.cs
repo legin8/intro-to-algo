@@ -1,3 +1,13 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: ChangeColorOnMouseOver.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: On start set the default color of normal color.
+Changes the color based on the mouse.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

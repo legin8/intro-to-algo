@@ -1,3 +1,16 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: Sheep.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: This is used for each sheep that runs across the screen.
+On start it sets the current collider and rigidbody.
+On update it moves each sheep and increases the speed each iteration.
+Holds methods that are called when the sheep is hit or runs off the side and knows if the sheep should be spawning.
+All other methods beside of Start and Update are called by other files.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

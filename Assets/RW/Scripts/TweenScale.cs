@@ -1,3 +1,13 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: TweenScale.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: This starts the heart at a set size in the editor.
+Once it is less than a set size is removed.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,15 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: SoundManager.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: Plays Sounds when Methods are called for:
+Shoot hay.
+Hit Sheep.
+Sheep fall.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

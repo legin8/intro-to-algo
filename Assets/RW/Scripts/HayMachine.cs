@@ -1,3 +1,13 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: HayMachine.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: On start LoadModel and set the color of the hay machine.
+On update, update the position on screen depending on the user input, also shoot if user input says to and if you can shoot at the time.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,20 +29,15 @@ public class HayMachine : MonoBehaviour
     {
         Destroy(modelParent.GetChild(0).gameObject);
 
-        switch (GameSettings.hayMachineColor) 
-            {
-                case HayMachineColor.Blue:
-                    Instantiate(blueModelPrefab, modelParent);
-                break;
-
-                case HayMachineColor.Yellow:
-                    Instantiate(yellowModelPrefab, modelParent);
-                break;
-
-                case HayMachineColor.Red:
-                    Instantiate(redModelPrefab, modelParent);
-                break;
-            }
+        if (GameSettings.hayMachineColor == HayMachineColor.Blue) {
+            Instantiate(blueModelPrefab, modelParent);
+            return;
+        }
+        if (GameSettings.hayMachineColor == HayMachineColor.Yellow) {
+            Instantiate(yellowModelPrefab, modelParent);
+            return;
+        }
+        Instantiate(redModelPrefab, modelParent);
     }
 
     // Update is called once per frame

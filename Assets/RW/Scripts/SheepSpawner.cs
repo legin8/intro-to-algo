@@ -1,3 +1,13 @@
+/* Program name: Introduction to Unity scripting - Sheep saving
+Project file name: SheepSpawner.cs
+Author: Nigel Maynard
+Date: 10/3/23
+Language: C#
+Platform: Unity/ VS Code
+Purpose: Assessment
+Description: On start it starts the sheep spawning.
+Holds the methods to destroy a single sheep and the method to destroy all sheep on game over.
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
