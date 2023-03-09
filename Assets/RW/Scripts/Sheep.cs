@@ -7,7 +7,6 @@ public class Sheep : MonoBehaviour
     public float runSpeed, gotHayDestroyDelay, dropDestroyDelay, heartOffset;
     private bool hitByHay, dropped;
 
-    
     private Collider myCollider;
     private Rigidbody myRigidbody;
     private SheepSpawner sheepSpawner;
@@ -23,6 +22,7 @@ public class Sheep : MonoBehaviour
     void Update()
     {
         transform.Translate((Vector3.forward * runSpeed) * Time.deltaTime);
+        runSpeed += (float)0.02;
     }
 
     private void HitByHay()

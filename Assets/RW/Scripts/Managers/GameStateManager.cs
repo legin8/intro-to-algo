@@ -9,7 +9,6 @@ public class GameStateManager : MonoBehaviour
 
     [HideInInspector]
     public int sheepSaved, sheepDropped;
-
     public int sheepDroppedBeforeGameOver;
     public SheepSpawner sheepSpawner;
 
@@ -30,7 +29,6 @@ public class GameStateManager : MonoBehaviour
     {
         sheepSaved++;
         UIManager.Instance.UpdateSheepSaved();
-
     }
 
 
@@ -45,12 +43,8 @@ public class GameStateManager : MonoBehaviour
     public void DroppedSheep()
     {
         sheepDropped++;
-
         UIManager.Instance.UpdateSheepDropped();
 
-        if (sheepDropped == sheepDroppedBeforeGameOver)
-        {
-            GameOver();
-        }
+        if (sheepDropped == sheepDroppedBeforeGameOver) GameOver();
     }
 }

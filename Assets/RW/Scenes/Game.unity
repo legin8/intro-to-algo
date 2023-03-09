@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.17888132, g: 0.2239849, b: 0.30584964, a: 1}
+  m_IndirectSpecularColor: {r: 0.17888115, g: 0.22398457, b: 0.30584916, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1148,13 +1148,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSpawn: 1
+  timeBetweenSpawns: 3
   sheepPrefab: {fileID: 7972895398375515922, guid: f2ca03717b39a4a40b7eddd3f3ff2d3f,
     type: 3}
   sheepSpawnPositions:
   - {fileID: 1249799207}
   - {fileID: 1437313687}
   - {fileID: 21964617}
-  timeBetweenSpawns: 2
 --- !u!4 &2011501481
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,17 +1202,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 14
   horizontalBoundary: 22
+  shootInterval: 0.8
   hayBalePrefab: {fileID: 6905101370135483894, guid: c010b87b50b18844988934718167236d,
     type: 3}
-  haySpawnpoint: {fileID: 1177129266}
-  shootInterval: 0.8
-  modelParent: {fileID: 5233456974663517128}
   blueModelPrefab: {fileID: 5233456973075758890, guid: 5c5170d876533ae43bc2e4b15c8e6f6e,
     type: 3}
   yellowModelPrefab: {fileID: 5917108387044516939, guid: 28d1a170d9eea59478aa66152b57f446,
     type: 3}
   redModelPrefab: {fileID: 3278733490917006391, guid: 5162234e78cffba45b0498c4775c0be7,
     type: 3}
+  haySpawnpoint: {fileID: 1177129266}
+  modelParent: {fileID: 5233456974663517128}
 --- !u!1 &2088324570 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3766863230289970331, guid: 726881a9b8c21e74dbb2d4b473c6d16d,

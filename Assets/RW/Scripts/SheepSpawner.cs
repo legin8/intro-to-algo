@@ -22,6 +22,7 @@ public class SheepSpawner : MonoBehaviour
         GameObject sheep = Instantiate(sheepPrefab, randomPosition, sheepPrefab.transform.rotation);
         sheepList.Add(sheep);
         sheep.GetComponent<Sheep>().SetSpawner(this);
+        if (timeBetweenSpawns > 0) timeBetweenSpawns -= (float)0.05;
     }
 
 
