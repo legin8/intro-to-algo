@@ -1,4 +1,4 @@
-/* Program name: Introduction to Unity scripting - Sheep saving
+/* Program name: intro-to-algo
 Project file name: DestroyTimer.cs
 Author: Nigel Maynard
 Date: 10/3/23

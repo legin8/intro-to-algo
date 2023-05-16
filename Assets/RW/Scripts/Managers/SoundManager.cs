@@ -1,4 +1,4 @@
-/* Program name: Introduction to Unity scripting - Sheep saving
+/* Program name: intro-to-algo
 Project file name: SoundManager.cs
 Author: Nigel Maynard
 Date: 10/3/23
@@ -27,21 +27,29 @@ public class SoundManager : MonoBehaviour
         cameraPosition = Camera.main.transform.position;
     }
 
+
+    // Plays music when game starts
     private void PlaySound(AudioClip clip)
     {
         AudioSource.PlayClipAtPoint(clip, cameraPosition);
     }
 
+
+    // Sound for when you shoot
     public void PlayShootClip()
     {
         PlaySound(shootClip);
     }
 
+
+    // Sound for when the sheep gets hit with hay
     public void PlaySheepHitClip()
     {
         PlaySound(sheepHitClip);
     }
 
+
+    // Sound for when the sheep drops off the end
     public void PlaySheepDroppedClip()
     {
         PlaySound(sheepDroppedClip);

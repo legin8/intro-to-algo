@@ -1,4 +1,4 @@
-/* Program name: Introduction to Unity scripting - Sheep saving
+/* Program name: intro-to-algo
 Project file name: SheepSpawner.cs
 Author: Nigel Maynard
 Date: 10/3/23
@@ -12,6 +12,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SheepSpawner : MonoBehaviour
 {
     public bool canSpawn = true; 
@@ -20,22 +21,26 @@ public class SheepSpawner : MonoBehaviour
     public List<Transform> sheepSpawnPositions = new List<Transform>();
     private List<GameObject> sheepList = new List<GameObject>();
     
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnRoutine());
     }
 
+    // This spawns the sheep by creating it and adding it
     private void SpawnSheep()
     {
         Vector3 randomPosition = sheepSpawnPositions[Random.Range(0, sheepSpawnPositions.Count)].position;
         GameObject sheep = Instantiate(sheepPrefab, randomPosition, sheepPrefab.transform.rotation);
         sheepList.Add(sheep);
         sheep.GetComponent<Sheep>().SetSpawner(this);
-        if (timeBetweenSpawns > 0) timeBetweenSpawns -= (float)0.05;
+        // This decreases the time between spawns of each sheep, just very slowly.
+        if (timeBetweenSpawns > 0) timeBetweenSpawns -= (float)0.09;
     }
 
 
+    // This calls spawn and then waits
     private IEnumerator SpawnRoutine() 
         {
         while (canSpawn) 
@@ -46,12 +51,14 @@ public class SheepSpawner : MonoBehaviour
     }
 
 
+    // Removes a single sheep from the list
     public void RemoveSheepFromList(GameObject sheep)
     {
         sheepList.Remove(sheep);
     }
 
 
+    // Removes all sheep
     public void DestroyAllSheep()
     {
         foreach (GameObject sheep in sheepList)
