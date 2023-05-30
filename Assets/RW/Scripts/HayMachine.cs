@@ -25,6 +25,7 @@ public class HayMachine : MonoBehaviour
         LoadModel();
     }
 
+    // This loads the model to the screen with the color that is selected
     private void LoadModel()
     {
         Destroy(modelParent.GetChild(0).gameObject);
@@ -40,13 +41,13 @@ public class HayMachine : MonoBehaviour
         Instantiate(redModelPrefab, modelParent);
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateMovement();
         UpdateShooting();
     }
 
+    // This sets the position of the hay machine
     private void UpdateMovement()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -55,6 +56,7 @@ public class HayMachine : MonoBehaviour
         if (horizontalInput > 0&& transform.position.x < horizontalBoundary) transform.Translate((transform.right * movementSpeed) * Time.deltaTime);
     }
 
+    // This shoots the hay if the (Space) key is pressed and stops you from firing one after another
     private void UpdateShooting()
     {
     shootTimer -= Time.deltaTime; 
@@ -66,6 +68,7 @@ public class HayMachine : MonoBehaviour
         }
     }
 
+    // Makes the hay and plays the sound
     private void ShootHay()
     {
         Instantiate(hayBalePrefab, haySpawnpoint.position, Quaternion.identity);

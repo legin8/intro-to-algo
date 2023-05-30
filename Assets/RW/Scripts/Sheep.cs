@@ -35,9 +35,11 @@ public class Sheep : MonoBehaviour
     void Update()
     {
         transform.Translate((Vector3.forward * runSpeed) * Time.deltaTime);
+        // This makes each sheep move faster over time (Advanced)
         runSpeed += (float)0.02;
     }
 
+    // This controls what happens when a sheep and hay connect
     private void HitByHay()
     {
         Instantiate(heartPrefab, transform.position + new Vector3(0, heartOffset, 0), Quaternion.identity);
@@ -62,6 +64,7 @@ public class Sheep : MonoBehaviour
         if (other.CompareTag("DropSheep") && !dropped) Drop();
     }
 
+    // This removes the sheep once it has been hit by hay
     private void Drop()
     {
         GameStateManager.Instance.DroppedSheep();

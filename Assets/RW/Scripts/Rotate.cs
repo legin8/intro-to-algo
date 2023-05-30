@@ -15,7 +15,7 @@ public class Rotate : MonoBehaviour
 {
     public Vector3 rotationSpeed;
 
-    // Update is called once per frame
+    // Every time this is called, it changes the rotation to make it look like the hay is rolling
     void Update()
     {
         transform.Rotate(rotationSpeed * Time.deltaTime);

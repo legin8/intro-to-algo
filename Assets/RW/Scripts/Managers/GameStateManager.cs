@@ -37,14 +37,14 @@ public class GameStateManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("Title");
     }
 
-
+    // Updates the fact that you killed another sheep
     public void SavedSheep()
     {
         sheepSaved++;
         UIManager.Instance.UpdateSheepSaved();
     }
 
-
+    // Show the game over screen
     private void GameOver()
     {
         sheepSpawner.canSpawn = false;
@@ -52,7 +52,7 @@ public class GameStateManager : MonoBehaviour
         UIManager.Instance.ShowGameOverWindow();
     }
 
-
+    // shows that a sheep got away
     public void DroppedSheep()
     {
         sheepDropped++;

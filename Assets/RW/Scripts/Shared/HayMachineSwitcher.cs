@@ -18,6 +18,7 @@ public class HayMachineSwitcher : MonoBehaviour, IPointerClickHandler
     private int selectedIndex;
     public GameObject blueHayMachine, yellowHayMachine, redHayMachine;
 
+    // Sets the color for the hay machine when selecting a color
     public void OnPointerClick(PointerEventData eventData)
     {
         selectedIndex++;
